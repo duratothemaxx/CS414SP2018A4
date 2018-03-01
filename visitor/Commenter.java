@@ -23,7 +23,7 @@ public class Commenter extends TreeDumper {
 	// commenting before a method declaration
 	public void visit(MethodDeclaration n) {
 		out.println("\n/*************");
-		out.println("New Method " + n.f2.f0.toString());
+		out.println("New method " + n.f2.f0.toString());
 		out.print("*************/");
 		n.f0.accept(this);
 		n.f1.accept(this);
